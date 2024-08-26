@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <button id="toggle-sidebar" class="sidebar-toggle">☰</button>
+            <ul class="sidebar-menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Communities</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation -->
+            <div class="top-nav">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="user-info">
+                    <span>Hi there, <strong>Morgan Oakley</strong> (@morgan)</span>
+                    <img src="avatar.png" alt="User Avatar" class="avatar">
+                </div>
+            </div>
+
+            <!-- Main Sections -->
+            <div class="sections">
+                <div class="section" id="your-projects">
+                    <h2>Your Projects</h2>
+                    <div class="grid-container">
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                felis accumsan nec.</p>
+                            <div class="card-actions">
+                                <span>★</span><span>👁️</span><span>🔗</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Less Cool Project</h3>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt,
+                                consectetur sapien et, facilisis dolor.</p>
+                            <div class="card-actions">
+                                <span>★</span><span>👁️</span><span>🔗</span>
+                            </div>
+                        </div>
+                        <!-- More cards... -->
+                    </div>
+                </div>
+
+                <div class="section" id="announcements">
+                    <h2>Announcements</h2>
+                    <div class="grid-container">
+                        <div class="card">
+                            <h3>Site Maintenance</h3>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit
+                                sodales...</p>
+                        </div>
+                        <div class="card">
+                            <h3>Community Share Day</h3>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan...</p>
+                        </div>
+                        <!-- More cards... -->
+                    </div>
+                </div>
+
+                <div class="section" id="trending">
+                    <h2>Trending</h2>
+                    <div class="grid-container">
+                        <div class="card">
+                            <h3>@tegan</h3>
+                            <p>World Peace Builder</p>
+                        </div>
+                        <div class="card">
+                            <h3>@morgan</h3>
+                            <p>Super Cool Project</p>
+                        </div>
+                        <!-- More cards... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
