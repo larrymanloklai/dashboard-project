@@ -1,10 +1,24 @@
+/* color theme 
+Blue:       Hex: #42B0D5
+Dark Blue:  Hex: #00233D
+Mid Blue:   Hex: #0073AB
+Light Blue: Hex: #B5E0F4
+White:      Hex: #FFFFFF
+Grey:       Hex: #4D4D4D
+Ultra Light Grey: #F7F7F7
+Light Grey: #EDEDED
+Mid Grey: #CFCFCF
+Dark Grey: #878787
+Ultra Dark Grey: #545454
+*/
+
 /* Basic Styles */
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-color: #F7F7F7;
 }
 
 /* Dashboard Layout */
@@ -15,18 +29,20 @@ html {
 
 /* Sidebar */
 .sidebar {
-    background-color: #007bff;
-    color: #fff;
-    width: 250px;
-    min-width: 250px;
+    background-color: #00233D;
+    color: #FFFFFF;
+    width: 190px;
+    min-width: 65px;
     transition: width 0.3s;
     overflow: hidden;
+    position: fixed;
+    height: 100vh;
 }
 
 .sidebar-toggle {
     background: none;
     border: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 1.5em;
     padding: 15px;
     cursor: pointer;
@@ -34,7 +50,8 @@ html {
 
 .sidebar-menu {
     list-style: none;
-    padding: 0;
+    padding: 0px;
+    color: #FFFFFF;
 }
 
 .sidebar-menu li {
@@ -42,9 +59,27 @@ html {
 }
 
 .sidebar-menu li a {
-    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.5s ease;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
     text-decoration: none;
-    display: block;
+}
+
+.sidebar-menu li:hover{
+    background: #0073AB;
+}
+
+.sidebar-menu li a img {
+    padding-right: 15px;
+}
+
+/* Sidebar Toggle */
+.sidebar.collapsed {
+    width: 30px;
 }
 
 /* Main Content */
@@ -52,7 +87,12 @@ html {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-left: 190px;
 }
+
+.main-content.collapsed {
+    margin-left: 65px; /* Adjust to match the collapsed sidebar width */
+  }
 
 .top-nav {
     display: flex;
@@ -129,20 +169,6 @@ html {
     justify-content: space-between;
     padding-top: 10px;
     border-top: 1px solid #ddd;
-}
-
-/* Sidebar Toggle */
-.sidebar.collapsed {
-    width: 60px;
-}
-
-.sidebar.collapsed .sidebar-menu li {
-    text-align: center;
-    padding: 10px;
-}
-
-.sidebar.collapsed .sidebar-menu li a {
-    font-size: 0.8em;
 }
 
 /* Responsive */

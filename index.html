@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,18 +13,17 @@
     <div class="dashboard">
         <!-- Sidebar -->
         <nav class="sidebar">
-            <button id="toggle-sidebar" class="sidebar-toggle">☰</button>
+            <button id="toggle-sidebar" class="sidebar-toggle"><img src="./icons/dashboard.svg" width="36" height="36"></button>
             <ul class="sidebar-menu">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Messages</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Communities</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Privacy</a></li>
+                <li><a href="#"><img src="./icons/home.svg" width="36" height="36">Home</a></li>
+                <li><a href="#"><img src="./icons/profile.svg" width="36" height="36">Profile</a></li>
+                <li><a href="#"><img src="./icons/messages.svg" width="36" height="36">Messages</a></li>
+                <li><a href="#"><img src="./icons/history.svg" width="36" height="36">History</a></li>
+                <li><a href="#"><img src="./icons/tasks.svg" width="36" height="36">Tasks</a></li>
+                <li><a href="#"><img src="./icons/communities.svg" width="36" height="36">Communities</a></li>
+                <li><a href="#"><img src="./icons/settings.svg" width="36" height="36">Settings</a></li>
+                <li><a href="#"><img src="./icons/support.svg" width="36" height="36">Support</a></li>
+                <li><a href="#"><img src="./icons/privacy.svg" width="36" height="36">Privacy</a></li>
             </ul>
         </nav>
 
@@ -42,6 +42,7 @@
 
             <!-- Main Sections -->
             <div class="sections">
+                <!-- Your Projects -->
                 <div class="section" id="your-projects">
                     <h2>Your Projects</h2>
                     <div class="grid-container">
@@ -61,10 +62,42 @@
                                 <span>★</span><span>👁️</span><span>🔗</span>
                             </div>
                         </div>
-                        <!-- More cards... -->
+                        <div class="card">
+                            <h3>Impossible App</h3>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
+                                id.</p>
+                            <div class="card-actions">
+                                <span>★</span><span>👁️</span><span>🔗</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Easy Peasy App</h3>
+                            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan
+                                aliquam.</p>
+                            <div class="card-actions">
+                                <span>★</span><span>👁️</span><span>🔗</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Ad Blocker</h3>
+                            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit
+                                felis.</p>
+                            <div class="card-actions">
+                                <span>★</span><span>👁️</span><span>🔗</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h3>Money Maker</h3>
+                            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
+                                scelerisque tortor purus sit amet ex.</p>
+                            <div class="card-actions">
+                                <span>★</span><span>👁️</span><span>🔗</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Announcements -->
                 <div class="section" id="announcements">
                     <h2>Announcements</h2>
                     <div class="grid-container">
@@ -77,10 +110,14 @@
                             <h3>Community Share Day</h3>
                             <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan...</p>
                         </div>
-                        <!-- More cards... -->
+                        <div class="card">
+                            <h3>Updated Privacy Policy</h3>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor.</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Trending -->
                 <div class="section" id="trending">
                     <h2>Trending</h2>
                     <div class="grid-container">
@@ -92,7 +129,14 @@
                             <h3>@morgan</h3>
                             <p>Super Cool Project</p>
                         </div>
-                        <!-- More cards... -->
+                        <div class="card">
+                            <h3>@kendall</h3>
+                            <p>Life Changing App</p>
+                        </div>
+                        <div class="card">
+                            <h3>@alex</h3>
+                            <p>No Traffic Maker</p>
+                        </div>
                     </div>
                 </div>
             </div>
